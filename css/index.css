@@ -1,0 +1,25 @@
+p.sub-title1{color: aquamarine;}
+
+p#sub-title2{color: rgb(204, 127, 255);}
+
+.big{ color: coral;
+      font-weight: bold;}
+
+h1{ color: brown;
+    font-size: 50pt;
+    font-weight: bold;}
+
+div.box1{height: 100px;
+width: 100px;
+background-color: orange;}
+
+div.box2{height: 100px;
+width: 100px;
+background-color: maroon;}
+
+div.box3{height: 100px;
+width: 100px;
+background-color: palegreen;
+text-align: center;
+border-radius: 50% 50% 50% 50%;
+position: absolute;}
