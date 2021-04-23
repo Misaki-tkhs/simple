@@ -14,5 +14,5 @@ function scoreCheck() {
     } else if (testScore >= 70) {
         document.write("惜しい！");
     } else {
-        document.write("不合格です！");
+        document.write("不合格です！");}
 }
