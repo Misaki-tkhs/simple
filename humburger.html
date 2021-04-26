@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>HumburgerMenu1</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <style type="text/css">
+          body{
+              padding: 0;
+              margin: 0;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              transition: 4s;
+          }
+            #main {
+                background-color: beige;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 8px;
+                z-index: 2;
+                overflow: auto;
+                box-sizing: border-box;
+            }
+            #menu{
+                background-color: cadetblue;
+                color: cornsilk;
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 8px;
+                width: 180px;
+                min-height: 100%;
+                z-index: 1;
+                box-sizing: border-box;
+            }
+            #open{
+                float: right;
+                cursor: pointer;
+            }
+            #main.menu-open{
+                left: -180px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="menu">
+            <ul>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+            <li>menu5</li>
+            </ul>
+        </div>
+        <div id="main">
+            <i class="fa fa-bars" id="open"></i>
+            <h1>Hello</h1>
+            <p>Hello! Hello! Hello!Hello! Hello! Hello !Hello! Hello! Hello !Hello! Hello! Hello!
+            <p>Hello! Hello! Hello!Hello! Hello! Hello !Hello! Hello! Hello !Hello! Hello! Hello!
+            <p>Hello! Hello! Hello!Hello! Hello! Hello !Hello! Hello! Hello !Hello! Hello! Hello!
+            <p>Hello! Hello! Hello!Hello! Hello! Hello !Hello! Hello! Hello !Hello! Hello! Hello!
+            <p>Hello! Hello! Hello!Hello! Hello! Hello !Hello! Hello! Hello !Hello! Hello! He llo!
+            <p>Hello! Hello! Hello!Hello! Hello! Hello !Hello! Hello! Hello !Hello! Hello! He llo!
+            <p>Hello! Hello! Hello!Hello! Hello! Hello !Hello! Hello! Hello !Hello! Hello! He llo!
+            <p>Hello! Hello! Hello!Hello! Hello! Hello !Hello! Hello! Hello !Hello! Hello! He llo!
+            <p>Hello! Hello! Hello!Hello! Hello! Hello !Hello! Hello! Hello !Hello! Hello! He llo!
+            <p>Hello! Hello! Hello!Hello! Hello! Hello !Hello! Hello! Hello !Hello! Hello! He llo!
+            <p>Hello! Hello! Hello!Hello! Hello! Hello !Hello! Hello! Hello !Hello! Hello! He llo!
+            </p>
+        </div>
+        <script>
+            'use strict';
+
+            const open = document.getElementById('open');
+            const main = document.getElementById('main');
+
+            open.addEventListener('click', () => {
+                if (main.className === 'menu-open'){
+                    main.className = '';
+                } else {
+                main.className = 'menu-open';}
+            });
+
+
+        </script>
+    </body>
+</html>
