@@ -11,8 +11,10 @@
 }
 
 header {
-  padding: 50px;
+  text-align: center;
+  padding: 80px;
 }
+
 
 @keyframes titleAnimation {
   0%{
@@ -21,12 +23,19 @@ header {
   }
 }
 
-header h1 {
+header a {
+  color: aquamarine;
   font-size: 70px;
   font-weight: bold;
   margin-bottom: 60px;
   white-space: nowrap;
   animation: titleAnimation 1.5s;
+}
+
+hr{
+  margin-bottom: 100px;
+  border-top:1px solid #111;
+  border-bottom:1.5px solid #777;
 }
 
 main {
@@ -72,7 +81,7 @@ main {
 }
 
 .contentsText {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   align-items: flex-end;
   position: absolute;
@@ -84,7 +93,7 @@ main {
   flex-direction: column;
   align-items: flex-end;
   position: absolute;
-  bottom: -150px;
+  bottom: -156px;
 } 
 
 .contents h2 {
@@ -104,7 +113,7 @@ main {
   font-weight: bold;
   white-space: nowrap;
   background-color: rgba(27, 172, 147, 0.8);
-  padding: 10px 20px;
+  padding: 7px 15px;
   letter-spacing: 0.3em;
   border-radius: 5px;
   opacity: 0;
@@ -116,9 +125,10 @@ main {
   line-height: 1.6;
   background-color: #555;
   font-size: 14px;
-  max-width: 340px;
-  padding: 15px;
+  max-width: 360px;
+  padding: 7px;
   margin-top: 15px;
+  margin-bottom: 70px;
   border-radius: 5px;
   opacity: 0;
   transform: translateY(20px);
@@ -134,7 +144,7 @@ main {
 }
 
 @media screen and (max-width:650px) {
-	header h1 {
+	header a {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -146,7 +156,7 @@ main {
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    top: 20px;
+    top: 10px;
   } 
   
   .introductionText {
@@ -154,11 +164,11 @@ main {
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    bottom: -100px;
+    bottom: -180px;
   } 
   
   .contents h2 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     white-space: nowrap;
     background-color: rgba(20, 20, 20, .8);
@@ -170,11 +180,11 @@ main {
     transition: 1s;
   }
   .contents h3 {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bold;
     white-space: nowrap;
     background-color: rgba(27, 172, 147, 0.8);
-    padding: 10px 10px;
+    padding: 6px 6px;
     letter-spacing: 0.3em;
     border-radius: 5px;
     opacity: 0;
@@ -184,16 +194,23 @@ main {
   
   .contents p {
     background-color: #555;
-    font-size: 9px;
-    max-width: 300px;
-    padding: 7px;
-    margin-top: 7px;
+    font-size: 6px;
+    max-width: 170px;
+    padding: 5px;
+    margin-top: 5px;
     border-radius: 5px;
     opacity: 0;
     transform: translateY(20px);
     transition: 1.5s;
   }
-  
+
+  .contents li:nth-of-type(even) .introductionText p{
+    max-width: 270px;
+  }
+  .contents li:nth-of-type(even) .introductionText {
+    bottom: -200px;
+  }
+
   .contents img {
     width: 55%;
     display: block;
